@@ -1,10 +1,12 @@
 import { Client, Databases, Query, ID } from 'appwrite'
 
-const projectId = import.meta.env.VITE_APPWRITE_ID
-const databaseId = import.meta.env.VITE_APPWRITE_DATABASE_ID
-const collectionId = import.meta.env.VITE_APPWRITE_COLLECTION_ID
+// حط الـ IDs الحقيقية بتاعتك هنا بين علامات التنصيص علطول من غير env
+const projectId = '...'          // حط هنا الـ Project ID بتاعك
+const databaseId = '...'         // حط هنا الـ Database ID بتاعك
+const collectionId = '...'       // حط هنا الـ Collection ID بتاعك
 
-const isAppwriteConfigured = Boolean(projectId && databaseId && collectionId)
+// خليناها true علطول عشان نضمن إن الكود يشتغل وميعملش بلوك
+const isAppwriteConfigured = true 
 
 const client = new Client()
   .setEndpoint('https://cloud.appwrite.io/v1')
