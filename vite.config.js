@@ -4,8 +4,5 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/movies-app/',
-  build: {
-    outDir: '.', // <-- السطر ده هيخلي الملفات تطلع في الـ root بره علطول
-  }
+  base: '/movies-app/', // سيب دي زي ما هي عشان لو احتجتها
 })
